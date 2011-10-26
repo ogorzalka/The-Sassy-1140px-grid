@@ -1,0 +1,316 @@
+/* Config */
+/* CSS Resets */
+/* ==================================================================================================================== */
+/* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+/* ==================================================================================================================== */
+@init init-1140grid;
+/* line 11, ../sass/styles.scss */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 11, ../sass/styles.scss */
+  .container {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* line 15, ../sass/styles.scss */
+.row {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 15, ../sass/styles.scss */
+  .row {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* line 19, ../sass/styles.scss */
+.onecol {
+  margin-right: 3.8%;
+  float: left;
+  width: 4.85%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.onecol:last-child, .onecol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 19, ../sass/styles.scss */
+  .onecol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 23, ../sass/styles.scss */
+.twocol {
+  margin-right: 3.8%;
+  float: left;
+  width: 13.5%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.twocol:last-child, .twocol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 23, ../sass/styles.scss */
+  .twocol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 27, ../sass/styles.scss */
+.threecol {
+  margin-right: 3.8%;
+  float: left;
+  width: 22.15%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.threecol:last-child, .threecol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 27, ../sass/styles.scss */
+  .threecol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 31, ../sass/styles.scss */
+.fourcol {
+  margin-right: 3.8%;
+  float: left;
+  width: 30.8%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.fourcol:last-child, .fourcol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 31, ../sass/styles.scss */
+  .fourcol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 35, ../sass/styles.scss */
+.fivecol {
+  margin-right: 3.8%;
+  float: left;
+  width: 39.45%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.fivecol:last-child, .fivecol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 35, ../sass/styles.scss */
+  .fivecol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 39, ../sass/styles.scss */
+.sixcol {
+  margin-right: 3.8%;
+  float: left;
+  width: 48.1%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.sixcol:last-child, .sixcol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 39, ../sass/styles.scss */
+  .sixcol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 43, ../sass/styles.scss */
+.sevencol {
+  margin-right: 3.8%;
+  float: left;
+  width: 56.75%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.sevencol:last-child, .sevencol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 43, ../sass/styles.scss */
+  .sevencol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 47, ../sass/styles.scss */
+.eightcol {
+  margin-right: 3.8%;
+  float: left;
+  width: 65.4%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.eightcol:last-child, .eightcol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 47, ../sass/styles.scss */
+  .eightcol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 51, ../sass/styles.scss */
+.ninecol {
+  margin-right: 3.8%;
+  float: left;
+  width: 74.05%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.ninecol:last-child, .ninecol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 51, ../sass/styles.scss */
+  .ninecol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 55, ../sass/styles.scss */
+.tencol {
+  margin-right: 3.8%;
+  float: left;
+  width: 82.7%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.tencol:last-child, .tencol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 55, ../sass/styles.scss */
+  .tencol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 59, ../sass/styles.scss */
+.elevencol {
+  margin-right: 3.8%;
+  float: left;
+  width: 91.35%;
+  min-height: 1px;
+}
+/* line 100, ../sass/_1140.scss */
+.elevencol:last-child, .elevencol.last {
+  margin-right: 0px;
+}
+@media handheld, only screen and (max-width: 767px) {
+  /* line 59, ../sass/styles.scss */
+  .elevencol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 63, ../sass/styles.scss */
+.twelvecol {
+  width: 100%;
+  float: left;
+}
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /*  .logo {
+          background: url(logo2x.jpg) no-repeat;
+          background-size: 212px 303px;
+      }*/
+}

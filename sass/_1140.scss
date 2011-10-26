@@ -1,0 +1,112 @@
+$col-unit: (100% + $col-margin-right) / $num-cols;
+
+/* CSS Resets */
+@mixin reset-1140grid() {
+	html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+		border:0;
+		margin:0;
+		padding:0;
+	}
+
+	article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object {
+		display:block;
+	}
+
+	a img {
+		border:0;
+	}
+
+	figure {
+		position:relative;
+	}
+
+	figure img {
+		width:100%;
+	}
+}
+
+@mixin init-1140grid {
+	@include reset-1140grid();
+
+	img, object, embed {
+		max-width: 100%;
+	}
+
+	img {
+		height: auto;
+	}
+
+	body {
+		/* Smaller screens */
+		@media only screen and (max-width: 1023px) {
+			font-size: 0.8em;
+			line-height: 1.5em;
+		}
+
+		/* Mobile */
+		@media handheld, only screen and (max-width: 767px) {
+			font-size: 16px;
+			-webkit-text-size-adjust: none;
+		}
+	}
+}
+
+
+/* ==================================================================================================================== */
+/* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+/* ==================================================================================================================== */
+
+@mixin container {
+	padding-left: $container-lateral-padding;
+	padding-right: $container-lateral-padding;
+
+	@media handheld, only screen and (max-width: 767px) {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+
+@mixin row {
+	width: 100%;
+	max-width: $row-width;
+	margin: 0 auto;
+	overflow: hidden;
+
+	@media handheld, only screen and (max-width: 767px) {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+@function colWidth($n) {
+	@return $col-unit * $n - $col-margin-right;
+}
+
+@mixin col($col){
+	margin-right: $col-margin-right;
+	float: left;
+	width: colWidth($col);
+	min-height: 1px;
+
+	&:last-child, &.last {
+		margin-right: 0px;
+	}
+
+	@media handheld, only screen and (max-width: 767px) {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: $container-lateral-padding;
+		padding-right: $container-lateral-padding;
+	}
+}

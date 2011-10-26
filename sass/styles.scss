@@ -1,0 +1,102 @@
+/* Config */
+$num-cols: 12;
+$row-width: 1140px;
+$container-lateral-padding: 20px;
+$col-margin-right: 3.8%;
+
+@import '_1140';
+
+@init init-1140grid;
+
+.container {
+    @include container;
+}
+
+.row {
+    @include row;
+}
+
+.onecol {
+    @include col(1);
+}
+
+.twocol {
+    @include col(2);
+}
+
+.threecol {
+    @include col(3);
+}
+
+.fourcol {
+    @include col(4);
+}
+
+.fivecol {
+    @include col(5);
+}
+
+.sixcol {
+    @include col(6);
+}
+
+.sevencol {
+    @include col(7);
+}
+
+.eightcol {
+    @include col(8);
+}
+
+.ninecol {
+    @include col(9);
+}
+
+.tencol {
+    @include col(10);
+}
+
+.elevencol {
+    @include col(11);
+}
+
+.twelvecol {
+width: 100%;
+float: left;
+}
+
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+    body {
+
+    }
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+    body {
+
+    }
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+/*  .logo {
+        background: url(logo2x.jpg) no-repeat;
+        background-size: 212px 303px;
+    }*/
+
+}
